@@ -14,7 +14,6 @@ body {
   height: 100vh;
   overflow: hidden;
   position: relative;
-  perspective: 1300px;
 
   > video {
     width: 100%;
@@ -34,6 +33,7 @@ body {
     left: 50%;
     margin-left: -300px;
     margin-top: -400px;
+    perspective: 1500px;
 
     article {
       width: 100%;
@@ -41,7 +41,6 @@ body {
       position: absolute;
       top: 0;
       left: 0;
-      display: none;
 
       //공통ui
       .inner {
@@ -70,6 +69,7 @@ body {
 
       //첫 번째 article
       &.face1 {
+        transform: rotateY(0deg);
         .inner {
           div {
             width: 290px;
@@ -114,6 +114,7 @@ body {
 
       //두 번째 article
       &.face2 {
+        transform: rotateY(45deg);
         .inner {
           div {
             h2 {
@@ -152,6 +153,7 @@ body {
 
       //세 번째 article
       &.face3 {
+        transform: rotateY(90deg);
         .inner {
           > div {
             width: 100%;
@@ -205,6 +207,7 @@ body {
 
       //네 번째 article
       &.face4 {
+        transform: rotateY(135deg);
         .inner {
           div {
             &:nth-of-type(1) {
@@ -245,6 +248,7 @@ body {
 
       //다섯 번째 article
       &.face5 {
+        transform: rotateY(180deg);
         .inner {
           > div {
             img {
@@ -283,6 +287,7 @@ body {
 
       //여섯 번째 article
       &.face6 {
+        transform: rotateY(225deg);
         .inner {
           > div {
             width: 100%;
@@ -338,6 +343,7 @@ body {
 
       //일곱 번째 article
       &.face7 {
+        transform: rotateY(270deg);
         .inner {
           > div {
             div {
@@ -387,8 +393,10 @@ body {
         }
       }
 
+      //여덟 번째 article
       &.face8 {
-        display: block;
+        transform: rotateY(315deg);
+
         .inner {
           div {
             &:nth-of-type(1) {
