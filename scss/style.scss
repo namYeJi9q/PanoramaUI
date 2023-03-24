@@ -25,6 +25,10 @@ body {
     opacity: 0.5;
   }
 
+  // 지름 * 3.14 = 원의 둘레길이
+  // 원의 둘레길이 / 3.14 = 지름
+  // 600 * 8 =
+
   #circle {
     width: 600px;
     height: 800px;
@@ -33,7 +37,7 @@ body {
     left: 50%;
     margin-left: -300px;
     margin-top: -400px;
-    perspective: 1500px;
+    perspective: 1300px;
 
     article {
       width: 100%;
@@ -41,6 +45,7 @@ body {
       position: absolute;
       top: 0;
       left: 0;
+      backface-visibility: hidden;
 
       //공통ui
       .inner {
@@ -51,7 +56,7 @@ body {
           width: 100%;
           height: 100%;
           border: 1px solid rgba(255, 255, 255, 0.5);
-          background: rgba(255, 255, 255, 0.4);
+          background: rgba(255, 255, 255, 0.2);
           box-sizing: border-box;
           padding: 50px;
           position: relative;
@@ -69,7 +74,8 @@ body {
 
       //첫 번째 article
       &.face1 {
-        transform: rotateY(0deg);
+        transform: rotateY(0deg) translateZ(-764px);
+
         .inner {
           div {
             width: 290px;
@@ -114,7 +120,8 @@ body {
 
       //두 번째 article
       &.face2 {
-        transform: rotateY(45deg);
+        transform: rotateY(45deg) translateZ(-764px);
+
         .inner {
           div {
             h2 {
@@ -153,7 +160,8 @@ body {
 
       //세 번째 article
       &.face3 {
-        transform: rotateY(90deg);
+        transform: rotateY(90deg) translateZ(-764px);
+
         .inner {
           > div {
             width: 100%;
@@ -207,7 +215,8 @@ body {
 
       //네 번째 article
       &.face4 {
-        transform: rotateY(135deg);
+        transform: rotateY(135deg) translateZ(-764px);
+
         .inner {
           div {
             &:nth-of-type(1) {
@@ -248,7 +257,8 @@ body {
 
       //다섯 번째 article
       &.face5 {
-        transform: rotateY(180deg);
+        transform: rotateY(180deg) translateZ(-764px);
+
         .inner {
           > div {
             img {
@@ -287,7 +297,8 @@ body {
 
       //여섯 번째 article
       &.face6 {
-        transform: rotateY(225deg);
+        transform: rotateY(225deg) translateZ(-764px);
+
         .inner {
           > div {
             width: 100%;
@@ -343,7 +354,8 @@ body {
 
       //일곱 번째 article
       &.face7 {
-        transform: rotateY(270deg);
+        transform: rotateY(270deg) translateZ(-764px);
+
         .inner {
           > div {
             div {
@@ -395,7 +407,7 @@ body {
 
       //여덟 번째 article
       &.face8 {
-        transform: rotateY(315deg);
+        transform: rotateY(315deg) translateZ(-764px);
 
         .inner {
           div {
