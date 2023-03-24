@@ -204,9 +204,6 @@ body {
   color: #ddd;
   margin-bottom: 5px;
 }
-.wrap #circle article.face5 {
-  display: block;
-}
 .wrap #circle article.face5 .inner > div img {
   margin-bottom: 40px;
 }
@@ -231,6 +228,51 @@ body {
 }
 .wrap #circle article.face5 .inner > div:hover .reflect {
   top: -45%;
+}
+.wrap #circle article.face6 {
+  display: block;
+}
+.wrap #circle article.face6 .inner > div {
+  width: 100%;
+  height: 185px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: center;
+}
+.wrap #circle article.face6 .inner > div i {
+  width: 22%;
+  height: 100%;
+  border-right: 1px solid #ddd;
+  font-size: 50px;
+  color: #fff;
+  padding-top: 16px;
+  padding-left: 12px;
+  transition: 0.5s;
+}
+.wrap #circle article.face6 .inner > div .con {
+  width: 75%;
+  height: 100%;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+.wrap #circle article.face6 .inner > div .con h2 {
+  font: bold 20px/2 "orbitron";
+  color: #fff;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  transform-origin: left center;
+}
+.wrap #circle article.face6 .inner > div .con p {
+  font: 16px/1.3 "arial";
+  color: #ddd;
+}
+.wrap #circle article.face6 .inner > div:hover i,
+.wrap #circle article.face6 .inner > div:hover h2 {
+  transform: scale(1.2);
+  color: lightcyan;
+  text-shadow: 0px 0px 10px aqua;
 }
 
 /*# sourceMappingURL=style.css.map */
